@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/script/ItemController.cs" Line="30" Column="37" />
       <File FileName="Assets/script/BasketController.cs" Line="37" Column="48" />
-      <File FileName="Assets/script/ItemGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/ItemGenerator.cs" Line="16" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +23,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1a04ee01-b99e-4cd1-9887-fc9d2d8e7f49" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/kobayashiyuuju/Desktop/AppleCatch/Assets/script/ItemGenerator.cs" relfile="Assets/script/ItemGenerator.cs" line="23" column="1" />
+      <Breakpoint file="/Users/kobayashiyuuju/Desktop/AppleCatch/Assets/script/ItemGenerator.cs" relfile="Assets/script/ItemGenerator.cs" line="26" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
