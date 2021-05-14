@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class BasketController : MonoBehaviour
 {
-    // Update is called once per frame
+    public AudioClip appleSE;
+    public AudioClip bombSE;
+    AudioSource aud;
+
+    void Start (){
+        this.aud = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if(Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+            // クリックした方向した光線（ray）上にコライダーがアタッチされたオブジェクトがあれば判定に入る
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 float x = Mathf.RoundToInt(hit.point.x);
                 float z = Mathf.RoundToInt(hit.point.z);
@@ -22,5 +31,20 @@ public class BasketController : MonoBehaviour
             }
         }
         
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Apple")
+        {
+            Debug.Log("Tag=Apple");
+            this.aud.PlayOneShot(this.appleSE);
+        } else {
+            Debug.Log("Tag=Bomb");
+            this.aud.PlayOneShot(this.bombSE);
+        }
+
+        Destroy(other.gameObject);
     }
 }

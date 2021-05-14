@@ -57,8 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/script/RayCast_EventSystems_Test.cs" />
-    <Compile Include="Assets/script/BasketController.cs" />
     <Compile Include="Assets/script/ItemController.cs" />
+    <Compile Include="Assets/script/BasketController.cs" />
+    <Compile Include="Assets/script/ItemGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

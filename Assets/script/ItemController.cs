@@ -22,4 +22,11 @@ public class ItemController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("キャッチされました！");
+        //Destroy(other.gameObject);
+    }
 }
